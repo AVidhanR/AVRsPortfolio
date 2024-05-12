@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Site</title>
+    <link rel="icon" href="icons/favicon.ico" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script>
+      function viewMore() {
+        const hiddenDivs = document.getElementById("hidden__divs");
+        const viewMoreButton = document.querySelector(".view__more");
+        if (hiddenDivs.style.display === "none") {
+          hiddenDivs.style.display = "";
+          viewMoreButton.textContent = "View Less ( ^_^ )";
+        } else {
+          hiddenDivs.style.display = "none";
+          viewMoreButton.textContent = "View More ( >_< )";
+        }
+      }
+    </script>
+    <header>
+      <section class="main__header" id="about">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a
+              href="https://github.com/AVidhanR"
+              target="_blank"
+              class="header__title"
+              >AVidhanR</a
+            >
+          </li>
+        </ul>
+        <nav class="nav__bar absolute">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="hero">
+        <img src="images/Myself.png" alt="A Vidhan Reddy" class="hero__image" />
+        <div class="hero__article">
+          <h1>Hi&nbsp;there&nbsp;👋🏻</h1>
+          <p>
+            I'm Vidhan Reddy a CS student,I'm an undergraduate CS student with a
+            passion for building user-centric web applications and intuitive
+            Android experiences.
+          </p>
+          <a href="#contact" style="text-decoration: none; color: black">
+            <h4>@itsvidhanreddy&nbsp;(&nbsp;V_V&nbsp;)</h4>
+          </a>
+        </div>
+      </section>
+      <div class="project__header" id="projects">
+        <a href="#about"><h2>Projects</h2></a>
+      </div>
+      <section class="main__project">
+        <div class="visible__divs">
+          <!-- Project One -->
+          <div class="sub__grid">
+            <img
+              src="images/RuchiRestaurent.png"
+              alt="Ruchi Restaurant Demo Image"
+            />
+            <article class="project__info">
+              <h2>Ruchi Restaurant</h2>
+              <p>
+                Welcome to Ruchi Restaurant, where we serve up delicious and
+                authentic cuisine. Our name, "Ruchi," translates to "delight" in
+                Hindi, and that's exactly what we aim to bring to your plate.
+              </p>
+              <button class="github__link">
+                <a
+                  href="https://github.com/AVidhanR/RuchiRestaurent"
+                  target="_blank"
+                  >View project</a
+                >
+              </button>
+            </article>
+          </div>
+          <!-- Project Two -->
+          <div class="sub__grid">
+            <img src="images/GifGen.png" alt="Gif Generator Demo Image" />
+            <article class="project__info">
+              <h2>Gif Generator</h2>
+              <p>
+                This Python Project allows you to create animated GIFs from a
+                collection of images. It provides a user-friendly interface and
+                flexibility in choosing the theme of your GIF.
+              </p>
+              <button class="github__link">
+                <a
+                  href="https://github.com/AVidhanR/GifGenerator"
+                  target="_blank"
+                  >View project</a
+                >
+              </button>
+            </article>
+          </div>
+          <!-- Project Three -->
+          <div class="sub__grid">
+            <img src="images/EmailSender.png" alt="Email Sender Demo Image" />
+            <article class="project__info">
+              <h2>Email Sender</h2>
+              <p>
+                This intuitive Android application empowers you to effortlessly
+                compose and send emails directly from your mobile device.
+                Crafted with the latest Jetpack Compose toolkit, EmailSenderApp
+                boasts a sleek and responsive user interface, ensuring a smooth
+                and enjoyable experience.
+              </p>
+              <button class="github__link">
+                <a
+                  href="https://github.com/AVidhanR/EmailSenderApp"
+                  target="_blank"
+                  >View project</a
+                >
+              </button>
+            </article>
+          </div>
+          <!-- Project Four -->
+          <div class="sub__grid">
+            <img
+              src="images/AirIQ-Website.png"
+              alt="AirIQ Demo Website Image"
+              content="AirIQ"
+            />
+            <article class="project__info">
+              <h2>AirIQ</h2>
+              <p>
+                AirIQ is a comprehensive website designed to promote the AirIQ
+                mobile application, which serves as a valuable tool for
+                monitoring and understanding the quality of the surrounding
+                atmosphere. By providing real-time data and insights into air
+                quality, AirIQ empowers users to make informed decisions to
+                safeguard their health and well-being.
+              </p>
+              <button class="github__link">
+                <a
+                  href="https://github.com/AVidhanR/AirIQ-Website"
+                  target="_blank"
+                  >View project</a
+                >
+              </button>
+            </article>
+          </div>
+        </div>
+
+        <div id="hidden__divs" style="display: none">
+          <!-- Project Five -->
+          <div class="sub__grid">
+            <img
+              src="images/Notification.png"
+              alt="Notification App Demo Image"
+            />
+            <article class="project__info">
+              <h2>Notification Project</h2>
+              <p>
+                The Notification Demo app provides a hands-on demonstration of
+                how push notifications work in mobile applications. Whether
+                you're a beginner learning app development or a seasoned
+                developer looking to refresh your knowledge of notifications,
+                this app serves as a practical tool for understanding the
+                notification workflow.
+              </p>
+              <button class="github__link">
+                <a
+                  href="https://github.com/AVidhanR/MobileAppDevelopment/tree/main/MAD_WEEK_12"
+                  target="_blank"
+                  >View project</a
+                >
+              </button>
+            </article>
+          </div>
+          <!-- Project Six -->
+          <div class="sub__grid">
+            <img src="images/Unscramble.png" alt="Unscramble App Demo Image" />
+            <article class="project__info">
+              <h2>Unscramble App</h2>
+              <p>
+                Unscramble is your ultimate word-solving companion, whether
+                you're conquering crosswords, mastering Scrabble, or simply
+                exercising your brain. With a few quick taps, discover hidden
+                word gems and unlock your vocabulary's full potential.
+              </p>
+              <button class="github__link">
+                <a
+                  href="https://github.com/AVidhanR/UnscrambleApp"
+                  target="_blank"
+                  >View project</a
+                >
+              </button>
+            </article>
+          </div>
+          <!-- Project Seven -->
+          <div class="sub__grid">
+            <img
+              src="images/Registration App with dB.png"
+              alt="Registration App Image"
+            />
+            <article class="project__info">
+              <h2>Registration&nbsp;Form with DB</h2>
+              <p>
+                The Registration Form App with Database Storage offers users a
+                convenient way to register and securely store their details
+                within the application. This robust solution combines a
+                user-friendly registration form interface with a backend SQLite
+                database to ensure data persistence and integrity.
+              </p>
+              <button class="github__link">
+                <a
+                  href="https://github.com/AVidhanR/MobileAppDevelopment/tree/v.1.4.2/MAD_WEEK_18"
+                  target="_blank"
+                  >View project</a
+                >
+              </button>
+            </article>
+          </div>
+          <!-- Project Eight -->
+          <div class="sub__grid">
+            <img src="images/TacoShop.png" alt="TacoShop Website Image" />
+            <article class="project__info">
+              <h2>Taco Shop</h2>
+              <p>
+                The Taco Shop Website is a vibrant and inviting online platform
+                that celebrates the delicious world of tacos. With its visually
+                appealing design, engaging content, and user-friendly interface,
+                the website serves as a virtual hub for taco enthusiasts to
+                explore, discover, and indulge in their favorite culinary
+                delights.
+              </p>
+              <button class="github__link">
+                <a href="https://github.com/AVidhanR/TacoShop" target="_blank"
+                  >View project</a
+                >
+              </button>
+            </article>
+          </div>
+        </div>
+        <!-- On clicking view more -->
+        <button class="view__more" onclick="viewMore();">
+          View More (&nbsp;>_<&nbsp;)
+        </button>
+      </section>
+      <div class="project__header" id="contact">
+        <a href="#about"><h2>Contact Me</h2></a>
+      </div>
+      <section class="main__contact">
+        <div class="contact__info">
+          <h3>Let's Connect!</h3>
+          <p>
+            I'm always open to new opportunities and collaborations. Whether
+            you're interested in working together on a project, discussing
+            technology trends, or simply saying hello, feel free to reach out to
+            me via email or social media.
+          </p>
+          <h4>(&nbsp;^_~&nbsp;)</h4>
+          <div class="social__media">
+            <a href="https://linkedin.com/in/AVidhanR" target="_blank"
+              ><img class="media__icon" src="icons/linkedin.png" alt="LinkedIn"
+            /></a>
+            <a href="https://github.com/AVidhanR" target="_blank"
+              ><img class="media__icon" src="icons/github.png" alt="GitHub"
+            /></a>
+            <a href="https://instagram.com/itsvidhanreddy" target="_blank"
+              ><img
+                class="media__icon"
+                src="icons/instagram.png"
+                alt="Instagram"
+            /></a>
+            <a href="https://linktr.ee/itsvidhanreddy" target="_blank"
+              ><img class="media__icon" src="icons/link.png" alt="Link Tree"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
